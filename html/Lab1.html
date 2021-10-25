@@ -5,7 +5,7 @@
         <title> Карлов Илья M33031 </title>
         <meta name="keywords" content="porfolion, laboratoty works, student">
         <meta name="description" content="Сайт-портфолио ученика третьего курса университета ИТМО, выполненный в рамках лабораторной работы">
-        <link rel="stylesheet" href="css/outline-prototype-label.css" type="text/css">
+        <!-- <link rel="stylesheet" href="css/outline-prototype-label.css" type="text/css"> -->
         <link rel="stylesheet" href="css/outline.css" type="text/css">
     </head>
     <body>
@@ -37,16 +37,37 @@
                 </ul>
             </section>
 
+
+
             <section class="skills" id="skills">
-                <h3>Навыки</h3>
-                <dl>
-                    <dt><h4>Java</h4></dt><br> <dd>Изучение синтаксиса и ООП на этом языке в университете, а также обучаясь на сайте <a href="https://javarush.ru/users/2380109" target="_blank">javarush.ru</a></dd>
-                    <dt><h4>C/C++</h4></dt><br> <dd>Два семестра изучения данных языков. Реализация лабораторных работ в том числе и по смежным предметам (Алгоритмы и структуры данных)</dd>
-                    <dt><h4>Python</h4></dt><br> <dd>Изучение этого языка в рамках курсов Машинного обучение и Методов оптимизации</dd>
-                </dl>
+                <!--<h3>Навыки</h3>
+                 <dl>
+                    <div><dt><h4>Java</h4></dt><br> <dd>Изучение синтаксиса и ООП на этом языке в университете, а также обучаясь на сайте <a href="https://javarush.ru/users/2380109" target="_blank">javarush.ru</a></dd></div>
+                    <div><dt><h4>C/C++</h4></dt><br> <dd>Два семестра изучения данных языков. Реализация лабораторных работ в том числе и по смежным предметам (Алгоритмы и структуры данных)</dd></div>
+                    <div><dt><h4>Python</h4></dt><br> <dd>Изучение этого языка в рамках курсов Машинного обучение и Методов оптимизации</dd></div>
+                </dl> -->
+                <table>
+                    <tr>
+                        <th><h3>Навыки</h3></th>
+                        <th><h4>Описание</h4></th> 
+                    </tr>
+                    <tr class="class1">
+                        <td><h4>Java</h4></td>
+                        <td>Изучение синтаксиса и ООП на этом языке в университете, а также обучаясь на сайте <a href="https://javarush.ru/users/2380109" target="_blank">javarush.ru</a></td>
+                    </tr>
+                    <tr>
+                        <td><h4>C/C++</h4></td>
+                        <td>Два семестра изучения данных языков. Реализация лабораторных работ в том числе и по смежным предметам (Алгоритмы и структуры данных)</td>
+                    </tr>
+                    <tr class="class1">
+                        <td><h4>Python</h4></td>
+                        <td>Изучение этого языка в рамках курсов Машинного обучение и Методов оптимизации</td>
+                    </tr>
+
+                </table>
             </section>
 
-            <!-- НАстроить css, чтобы следующие фразы доги как бы говорили -->
+            <!-- Настроить css, чтобы следующие фразы доги как бы говорили -->
             <section class="adage">
                 <q><i><b>Гарантированно, как смерть</b></i></q>
                 <sub><cite>Бенгальская поговорка</cite></sub>
@@ -89,7 +110,8 @@
                         SList *right = nullptr;
                         unsigned char height;
 
-                        explicit SList(const int num) : left(nullptr), right(nullptr), num(num), height(1) {};
+                        explicit SList(const int num) :
+                             left(nullptr), right(nullptr), num(num), height(1) {};
                     };
 
 

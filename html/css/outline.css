@@ -1,8 +1,9 @@
-*{
+html{
   background-color: white;
   background-image: url(../pic/fPAsV1.jpg);
-  /* background-attachment: fixed; */
-  animation: 30s scroll linear infinite;
+  animation: 50s scroll linear infinite;
+  z-index: 0;
+  font-family: 'Courier New', Courier, monospace;
 }
 
 @keyframes scroll {
@@ -24,6 +25,8 @@
       background-position: 77% 77%;
   }92% {
     background-position: 89% 89%;
+  }100% {
+    background-position: 100% 100%;
   }
   }
 
@@ -39,14 +42,15 @@ header .navigation{
   flex-wrap: wrap;
   color: blueviolet;
   display: flex;
-  /* background-color: white; */
   justify-content: space-around;
   align-items: center;
   font-size: 1.5vmax;
+  font-weight: 500;
   font-family: monospace;
   border-bottom: 5px solid black;
   border-radius: 0px 0px 16vmax 0px;
   box-shadow: 0px 0px 12px black;
+  background-color: rgba(265, 165, 0, 0.25);
 }
 header .navigation a{
   align-self: center;
@@ -55,26 +59,36 @@ header .navigation a:hover{
   text-decoration: none;
 }
 
+body{
+  background-color: rgba(265, 165, 0, 0.25);
+}
 .start-page{
   z-index: 1;
   position: relative;
   background-image: url(../pic/sunset-home-office-working-with-laptop-on-the-garden-picjumbo-com.jpg);
+  animation: none;
   background-size:cover;
   padding-left:36%;
+  padding-right: 36%;
   padding-top:32%;
   padding-bottom: 15%;
-  text-shadow: 0px 0px 250px black;
+  text-align: center;
 }
 .start-page h2{
-  font-size: 2vmax;
+  font-size: 2.5vmax;
+  color: whitesmoke;
 }
 .start-page p{
-  font-size: 1vmax;
+  font-size: 1.7vmax;
+  color: whitesmoke;
 }
 
 .projects{
-  /* background-color: white; */
   color:#85d04a;
+}
+.projects h3{
+  text-align: center;
+  font-size: 2.1vw;
 }
 .projects ul{
   display:flex;
@@ -93,14 +107,19 @@ header .navigation a:hover{
   background-color: white;
   border:1px solid #85d04a;
   border-radius: 15px;
+  font-size: 1.7vw;
 }
 
 .projects li a{
   justify-content: center;
   background-color: white;
 }
+.projects li h4{
+  font-size: 1.9vw;
+}
 
-.skills{color: #300000;
+/* .skills{
+  color: #300000;
   background-size: cover;
 }
 
@@ -114,7 +133,7 @@ header .navigation a:hover{
   flex-direction: row;
 }
 
-.skills dd{
+.skills div{
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -125,10 +144,44 @@ header .navigation a:hover{
   border-radius: 15px;
   padding: 3% 5%;
   margin:3%;
-  color: #800000;
+  color: #00a000;
+}
+
+.skills dd{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
   align-self: center;
   justify-content: flex-start;
+  margin: 3%;
   padding-left:15%;
+} */
+
+.skills table {
+  color: #00a000;
+  margin: 5%;
+}
+.skills th{
+  border: 1px solid black;
+  box-shadow: 0px 0px 6px green;
+  border-radius: 15px;
+  background-color: rgba(265, 165, 0, 0.25);
+}
+.skills td{
+  border: 1px solid green;
+  box-shadow: 0px 0px 6px green;
+  border-radius: 15px;
+  margin:3%;
+  text-align: center;
+}
+.skills h4{
+  font-size: 1.9vw;
+}
+.skills h3{
+  font-size: 2.1vw;
+}
+.skills table .class1{
+  color: rgb(100, 0, 255);
 }
 
 .adage{
@@ -137,7 +190,7 @@ header .navigation a:hover{
   margin: left;
   border: 3px inset black;
   border-radius: 10px 10px 10px 10px;
-  justify-content: center;
+  justify-content:left;
   display: flex;
 }
 
@@ -145,8 +198,25 @@ header .navigation a:hover{
     align-content: center;
     display: flex;
     justify-content: space-around;
-    background-color: #5D0899;
-    color: orange;
+    color: rgb(100, 0, 255);
+}
+
+@media (max-width:600px){
+  .char-picture{
+    display: none;
+  }
+}
+
+.code h3{
+  text-align: center;
+  font-size: 2.1vw;
+  color: #85d04a;
+}
+
+@media (max-width:650px){
+  .code{
+    display: none;
+  }
 }
 
 .formula{
@@ -156,10 +226,12 @@ header .navigation a:hover{
   border-radius: 10px 10px 10px 10px;
   border: 3px outset black;
   align-content: center;
-  justify-content: center;
+  justify-content: right;
   display: flex;
 }
-
+.formula h3{
+  font-size: 1.5vw;
+}
 
 .contact{
   z-index: 5;
@@ -169,10 +241,9 @@ header .navigation a:hover{
   flex-wrap: wrap;
   color: blueviolet;
   display: flex;
-  /* background-color: white; */
   justify-content: space-around;
   align-items: center;
-  font-size: 20px;
+  font-size: 2vw;
   font-family: monospace;
   border-left: 10px solid black;
   border-right: 10px solid black;
