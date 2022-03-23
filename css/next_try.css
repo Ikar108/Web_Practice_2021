@@ -3,6 +3,7 @@ html{
     z-index: 0;
     font-family: 'Courier New', Courier, monospace;
     font-family: 'Roboto Condensed', sans-serif;
+    color: rgb(80, 80, 80);
   }
 
 header{
@@ -11,10 +12,17 @@ header{
     display: flex;
     flex-direction:row;
     justify-content:left;
+    border-bottom: #008000 solid 4px;
 }
 
 header .title{
     margin-left: 30px;
+    color: #006000;
+    font-size: 22px;
+}
+
+header .title p{
+    margin-bottom: 10px;
 }
 
 header h1{
@@ -23,11 +31,11 @@ header h1{
     position: center;
     display: flex;
     flex-direction:row;
-
+    text-shadow: grey 3px 3px 3px;
 }
 
 header h1 .loctype1{
-    color: #008000;
+    color: #006000;
 }
 
 header h1 .loctype2{
@@ -50,15 +58,39 @@ header .navigation{
     flex-flow: row wrap;
     justify-content: center;    
     align-items:center;
+    list-style: none outside;
 }
 
-.roses .roses-types .category{
+.roses .category{
     margin-bottom: 40px;
-    border: 1px solid #eee;
+    border: 1px solid #008000;
     text-align: center;
+    margin-right: 40px;
+    margin-bottom: 40px;
+}
+
+.roses .category-title{
+    color:#006000;
+    font-size: 19px;
+}
+
+.roses .count{
+    padding: 0.125em 0.25em;
+    text-decoration: none;
+    background-color: white;
+    color:#006000;
+    font-size: 19px;
+}
+
+.about{
+    box-sizing: border-box;
+    margin: 10px 40px 0px 40px;
+    padding: 10px 15px 5px;
+    border: 1px #006000 solid;
 }
 
 footer{
+    border-top: #006000 solid 4px;
     background-color: #a5f7b7;
 }
 
