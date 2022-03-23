@@ -86,7 +86,6 @@ header .navigation{
 
 .navigation:hover .menu-content {display: block;}
 
-/* Изменение цвета фона кнопки раскрывающегося списка при отображении содержимого раскрывающегося списка */
 .navigation:hover .menu {background-color: #3e8e41;} 
 
 .roses{
@@ -129,6 +128,10 @@ header .navigation{
     margin: 10px 40px 0px 40px;
     padding: 10px 15px 5px;
     border: 1px #006000 solid;
+}
+
+h1{
+    text-align: center;
 }
 
 footer{
