@@ -27,16 +27,17 @@ header .navigation{
 .roses dl{
     display:flex;
     flex-wrap: wrap;
-    flex-direction: row;
+    flex-direction: inherit;
     justify-content: center;    
-    align-items: baseline;
+    align-items:center;
 }
 
-.roses div{
+.roses dl div{
     text-align: center;
     display: flex;
     justify-content: flex-start;
     align-items: center;
+    border: 1px solid black;
 }
 
 footer{
