@@ -2,6 +2,7 @@ html{
     background-color: white;
     z-index: 0;
     font-family: 'Courier New', Courier, monospace;
+    font-family: 'Roboto Condensed', sans-serif;
   }
 
 header{
@@ -12,10 +13,25 @@ header{
     justify-content:left;
 }
 
+header .title{
+    margin-left: 30px;
+}
+
 header h1{
-    font-size:40px;
-    padding-top: 50px;
+    font-size: 50px;
     margin-bottom: 0px;
+    position: center;
+    display: flex;
+    flex-direction:row;
+
+}
+
+header h1 .loctype1{
+    color: #008000;
+}
+
+header h1 .loctype2{
+    color:#a10040;
 }
 
 header .navigation{
@@ -23,21 +39,23 @@ header .navigation{
     top: 20px;
     right: 20px;
 }
+.roses{
+    box-sizing: border-box;
+    margin: 20px 0px 0px 0px;
+    padding: 10px 15px 5px;
+}
 
-.roses dl{
-    display:flex;
-    flex-wrap: wrap;
-    flex-direction: inherit;
+.roses .roses-types{
+    display: flex;
+    flex-flow: row wrap;
     justify-content: center;    
     align-items:center;
 }
 
-.roses dl div{
+.roses .roses-types .category{
+    margin-bottom: 40px;
+    border: 1px solid #eee;
     text-align: center;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    border: 1px solid black;
 }
 
 footer{
