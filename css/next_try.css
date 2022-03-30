@@ -43,9 +43,12 @@ header h1 .loctype2{
 }
 
 header .navigation{
-    margin-left: 33%;
-    margin-right: 60px;
+    margin-right: 65px;
     margin-top: 20px;
+    position: fixed;
+    top: 20px;
+    right: 18px;
+    
 }
 
 
@@ -62,6 +65,8 @@ header .navigation{
     display: inline-block;
     background-color: #a5f7b7;
     overflow: hidden;
+    font-size: 20px;
+    border: 2px solid #006000;
 }
 
 .menu-content {
